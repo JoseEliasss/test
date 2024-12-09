@@ -1,0 +1,4 @@
+1-dataArrays commented the multyphotos if you want them back uncomment and use the commented code in recipeScree.jsx
+2-if not needed search screen delete it and delete the commented part in DrawerContainer.jsx
+3-if you want to add a link to the ingredients of every recipes putt touchableOpacity instead of view and remove the comments in IngredientsDetailsScreen.jsx
+4-https image of water not found

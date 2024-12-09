@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react";
-import { FlatList, Text, View, Image, TouchableHighlight } from "react-native";
+import { FlatList, Text, View, Image, TouchableOpacity } from "react-native";
 import { StyleSheet } from "react-native";
 import { categories } from "../../data/dataArrays";
 import { getNumberOfRecipes } from "../../data/MockDataAPI";
@@ -34,9 +34,9 @@ export default function CategoriesScreen(props) {
   };
 
   const renderCategory = ({ item }) => (
-    <TouchableHighlight
-      underlayColor="rgba(73,182,77,0.9)"
-      onPress={() => onPressCategory(item)}
+    <View
+    // underlayColor="rgba(73,182,77,0.9)"
+    // onPress={() => onPressCategory(item)}
     >
       <View style={styles.categoriesItemContainer}>
         <Image
@@ -48,7 +48,7 @@ export default function CategoriesScreen(props) {
           {getNumberOfRecipes(item.id)} recipes
         </Text>
       </View>
-    </TouchableHighlight>
+    </View>
   );
 
   return (
